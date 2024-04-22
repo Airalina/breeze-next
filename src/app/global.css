@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "SpaceGrotesk";
+    font-weight: 400;
+    src: url(/SpaceGrotesk-Medium.ttf);
+}
+
+a {
+    font-family: "SpaceGrotesk";
+}

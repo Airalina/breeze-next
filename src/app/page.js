@@ -1,16 +1,25 @@
 import LoginLinks from '@/app/LoginLinks'
+import IndexPage from '@/app/IndexPage'
+import Header from '@/app/(app)/Header'
+
 
 export const metadata = {
-    title: 'Laravel',
+    title: 'BinaryBlog',
 }
 
 const Home = () => {
-    return (
-        <>
-            <div className="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-                <LoginLinks />
 
-                <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+    return (
+        <> 
+      
+            <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px- min-h-screen">
+            <Header title="BinaryBlog" />
+              
+               {/* <LoginLinks /> */}
+               <IndexPage />
+             
+
+                {/* <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div className="flex justify-center pt-8 sm:justify-start sm:pt-0">
                         <svg
                             viewBox="0 0 651 192"
@@ -260,7 +269,7 @@ const Home = () => {
                             Laravel Breeze + Next.js template
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
